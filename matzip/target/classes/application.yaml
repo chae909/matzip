@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/matzip_db?serverTimezone=Asia/Seoul
+    username: root
+    password: 4590
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml
+  type-aliases-package: com.kosa.matzip.domain
